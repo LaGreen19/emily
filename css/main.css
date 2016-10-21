@@ -418,8 +418,10 @@ aside ul{
    ========================================================================== */
 
 @media (min-width:600px) {
+	
 	h1{
-		font-size:1.6em;
+		font-size:2em;
+		line-height:2em;
 	}
 	
 
@@ -432,10 +434,28 @@ aside ul{
 	
 /*******LANDING PAGE *********/
 	
+	
+	.home-img{
+		width:40%;
+	}
+
+	.home-content{
+		border:pink 1px solid;
+		width:50%;
+		float:left;
+	}
+	
 	.headline{
 		text-align:left;
-		margin-bottom:4%;
-		border:1px solid gray;
+		width:100%;
+	}
+	
+	.headline h1{
+		line-height:1em;
+	}
+	
+	.intro{
+		clear:none;
 	}
 	
 	.icons{
@@ -448,8 +468,9 @@ aside ul{
 	}
 	
 	.blog-btn{
-		width:25%;
+		width:55%;
 		margin-top:5%;
+		
 	}
 }
 
