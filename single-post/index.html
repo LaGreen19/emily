@@ -43,18 +43,20 @@
 	</header>
 		
 	<aside>
-		<figure>
-			<img class="profile-pic" src="../img/profile.jpg" alt="laura"/>
-		</figure>
-
-		<div class="short-bio">
-		<p>I'm Emily, the lead developer at Skillcrush as well as an instructor in Ruby and
-		JavaScript. This is my blog full of inspiration</p>
+		<div class="img-intro">
+			<figure class="profile-pic-wrapper">
+				<img class="profile-pic" src="../img/ellipse.png" alt="emily"/>
+			</figure>
+			
+			<div class="short-bio">
+			<p>I'm Emily, the lead developer at Skillcrush as well as an instructor in Ruby and
+			JavaScript. This is my blog full of inspiration</p>
+			</div>
 		</div>
 		
-		<form>
-			<input class="search type="text" title="search">
-			<button class="btn search-button">></button>
+		<form class="search">
+				<input class="search-input" type="text" placeholder=" search" required>
+				<input class="search-btn" type="button" value=">">
 		<form>
 		
 		<div class="sidebar-links">
@@ -123,12 +125,18 @@ Bacon ipsum dolor sit amet strip steak jowl pancetta, cow turkey salami sausage 
 	
 	</div>
 	
-	<p>Written by <span> Emily Davis </span> / Post in <span> My Notes </span> / No Comments
+	<p class = "blog-info">Written by <span> Emily Davis </span> / Post in <span> My Notes </span> / No Comments
 	
-	<div class="no-comments">
-		<h4>No Comments</h4>
-		<h3>Add Comment</h3>
+	<div class="comment-status">
+		
+			<h4>No Comments</h4>
+		
+		
+		
+			<h3>Add Comment</h3>
+		
 	</div>
+
 	
 	<h2>Leave a Comment </h2>
 	
@@ -147,12 +155,11 @@ Bacon ipsum dolor sit amet strip steak jowl pancetta, cow turkey salami sausage 
 			<input class="email-input" type="text">
 		</div>
 		
-		<h5>Your Comment </h5>
-		<input class="comment-input" type="text" class="comment-box">
-		
-		
-		<button class="submit-btn btn">Submit Comment</button>
-		
+		<div class="your-comment">
+			<h5 class="your-comment">Your Comment </h5>
+			<input class="comment-input" type="text" class="comment-box">
+			<button class="submit-btn btn">Submit Comment</button>
+		</div>
 	</form>
 	
 	</div>
