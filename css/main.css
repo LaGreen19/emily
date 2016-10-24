@@ -94,6 +94,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/******MAIN STYLES *******/   
+   
 html{
 	font-size:16px;
 }
@@ -101,23 +104,33 @@ html{
 body{
 	border-top:#45ac9d 5px solid;
 	margin:0;
+	padding:0;
 	font-family:Open Sans, sans-serif;
 	color:gray;
 	font-size:1em;
+	width:100%;
+	text-align:center;
 }
 
 .wrapper{
-	margin:0 10%;
+	width:95%;
+	margin:0 2%;
 }
+
 
 h1{
 	font-family:"montserrat", sans-serif;
 	font-weight:bold;
-	font-size: 1em;
+	font-size: 1.5em;
+}
+
+h2{
+	font-size:1.2em;
 }
 
 h3{
 	color:#45ac9d;
+	font-size:1.1em;
 }
 
 p{
@@ -137,116 +150,103 @@ p{
 	padding:1% 0  3% 5%;
 }
 
-/**HEADER**/
 
-.logo{
-	float:left;
-	width:35%;
-	margin-bottom:-125px;
-}
-	
+
+/**********HEADER *****************/
+
+
 .logo h1{
 	color:#45ac9d;
 	font-size:2em;
-	margin-bottom:-10px;
+	line-height:0;
+	margin-top:20%;
 }
+
+.profile-pic-wrapper{
+	padding:0;
+	margin:0;
+	width:50%;
+	float:left;
+}
+.profile-pic{
+	width:50%;
+	display:block;
+	margin:auto;
+}
+
+.short-bio{
+	font-size:.75em;
+	margin-right:5%;
+	position:relative;
+	width:50%;
+	float:left;
+}
+
+/*******NAVIGATION **************/
 
 nav{
-	float:right;
-	padding:5% 0 3% 45%;
-	width:55%;
-	border-bottom:1px solid black;
+	float:left;
+	width:40%;
+}
+nav ul{
+	margin:auto;
+	padding:0;
 }
 
-nav ul{
-	padding-left:5%;
-	
-}
 nav ul li{
-	display:inline;
 	text-transform:uppercase;
-	padding-left:5%;
+	list-style:none;
+	padding:8% 0; 
+	border:gray .5px solid;
+	border-radius:75%;
+	margin:10%;
+	background-color:#eeeff1;
+	display:flex;
+	justify-content:center;
 }
 
 nav ul li a{
 	text-decoration:none;
 	color:gray;
+	font-size:.65em;
 }
 
 
-
-
-/**SIDEBAR**/
-
-aside{
-	width:25%;
-	height:100%;
-	border-left:1px gray solid;
-	float:right;
-	padding-left:5%;
-	clear:both;
-}
-
-aside ul{
-	list-style:none;	
-	text-align:left;
-	padding:0;
-	line-height:2em;
-}
-
-.profile-pic{
-	border-radius:50%;
-	width:100%;
-	margin:0;
+/**********SIDEBAR*****************/
+.sidebar-links{
+	display:none;
 }
 
 .search{
-	width:75%;
-	height:35px;
-	border:1px gray solid;
-	
+	margin:5%;
+}
+.search-input{
+	border:gray 1px solid;
+	width:35%;
+	font-style:italic;
+	position:relative;
+	height:100%;
 }
 
-.search-button{
+.search-btn{
 	background-color:#45ac9d;
 	color:white;
-	width:20%;
-	margin:2px 0 0 -4px;
+	position:relative;
+	height:100%;
+	margin:0 5px 0 -5px;
 }
 
-.brooklyn-beta, .rails-girls, .etsy{
-	height:90px;
+.search-btn:hover {
+	background-color:white;
+	color:black;
 }
 
-.brooklyn-beta{
-	background-color:#edf5f8;
-}
-
-.rails-girls{
-	background-color:#d6441d;
-}
-
-
-
-.etsy{
-	background-color:#fcd841;
-}
 
 /***********LANDING PAGE***********/
 
-.wrapper{
-	margin-top:5%;
-}
-
-.home-img{
-	float:left;
-	width:45%;
-	margin:0;
-	padding:0 5% 0 0;
-}
-
 .home-img img{
 	width:100%;
+	margin-top:10%;
 }
 
 .home-content h1{
@@ -286,56 +286,87 @@ aside ul{
 /***********SINGLE POST PAGE*************/
 
 .date{
-	padding-top:20%;
+	text-align:left;
+	margin:15% 0 0 7%;
+	font-size:.75em;
+	line-height:.2em;
+	clear:both;
 }
+
 .single-post-img{
-	width:68%;
+	width:100%;
+	display:block;
 }
 
 
 .post-content{
-	width:65%;
+	width: 100%;
+	text-align:center;
 }
-.no-comments h4{
+
+.blog-info{
+	font-size:.85em;
+}
+
+.comment-status{
+	border-top:gray 1px solid;
+	border-bottom:gray 1px solid;
+	display:inline-block;
+	width:100%;
+}
+
+.comment-status h4{
 	float:left;
-	padding-right:45%;
+	margin-left:10%;
 }
-
-
-.no-comments{
-	border-top:solid gray 2px;
-	border-bottom:solid gray 2px;
-	width:65%;
-}
-
 .comment-form{
-	width:70%;
+	width:90%;
+	margin:0 auto;
+	clear:both;
+	text-align:left;
 }
+
+.comment-form h5{
+	margin-bottom:0;
+}
+
 
 .name-form, .email-form{
 	float:left;
-	width:48%;
-	margin:0;
-	padding-bottom:5%;
+	width:45%;	
 }
 
+.name-form{
+	margin-right:6%;
+}
 .email-input,.name-input{
-	width:95%;
+	width:98%;
 	margin:0;
+	padding:0;
 	height:30px;
+	border:1px solid gray;
 }
 
+.your-comment{
+	padding-top:3%;
+	clear:both;
+}
 .comment-input{
 	height:200px;
-	width:95%;
+	width:96%;
+	padding-top:5%;
+	border:1px solid gray;
 }
 
 .submit-btn{
-	font-size:1em;
+	font-size:.85em;
 	padding:5px;
-	width:35%;
-	margin: 5% 0 0 60%;
+	width:45%;
+	margin:5% 0;
 }
+
+
+
 
 /* ==========================================================================
    Helper classes
@@ -429,18 +460,81 @@ aside ul{
 
 
 @media (min-width:840px){
+
+/*******************HEADER*******************/
+
+.logo{
+	float:left;
+	width:35%;
+	margin-bottom:-125px;
+}
 	
+nav{
+	float:right;
+	padding:5% 0 3% 45%;
+	width:55%;
+	border-bottom:1px solid black;
+}
+
+nav ul{
+	padding-left:5%;
 	
+}
+nav ul li{
+	display:inline;
+	padding-left:5%;
+}
+
+
+
+
+/********SIDE BAR ************/
+aside{
+	width:25%;
+	height:100%;
+	border-left:1px gray solid;
+	float:right;
+	padding-left:5%;
+	clear:both;
+}
+
+aside ul{
+	list-style:none;	
+	text-align:left;
+	padding:0;
+	line-height:2em;
+}
+
+
+.brooklyn-beta, .rails-girls, .etsy{
+	height:90px;
+}
+
+.brooklyn-beta{
+	background-color:#edf5f8;
+}
+
+.rails-girls{
+	background-color:#d6441d;
+}
+
+
+
+.etsy{
+	background-color:#fcd841;
+}
 	
 /*******LANDING PAGE *********/
 	
 	
 	.home-img{
-		width:40%;
-	}
+		float:left;
+		width:45%;
+		margin:0;
+		padding:0 5% 0 0;
+}
 
 	.home-content{
-		border:pink 1px solid;
 		width:50%;
 		float:left;
 	}
@@ -472,14 +566,20 @@ aside ul{
 		margin-top:5%;
 		
 	}
+
+/*******SINGLE POST PAGE ************/
+
+
+.no-comments h4{
+	float:left;
+	padding-right:45%;
 }
 
+.single-post-img{
+	width:68%;
+}
 
-
-
-
-
-
+}
 
 /* ==========================================================================
    Print styles.
