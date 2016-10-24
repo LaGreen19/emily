@@ -112,6 +112,10 @@ body{
 	text-align:center;
 }
 
+a {
+	font-family:Open Sans, sans-serif;
+	font-size:.78em;
+}
 .wrapper{
 	width:95%;
 	margin:0 2%;
@@ -187,6 +191,7 @@ p{
 nav{
 	float:left;
 	width:40%;
+	padding-right:5%;
 }
 nav ul{
 	margin:auto;
@@ -285,6 +290,8 @@ nav ul li a{
 
 /***********SINGLE POST PAGE*************/
 
+/***MAIN CONTENT *****/
+
 .date{
 	text-align:left;
 	margin:15% 0 0 7%;
@@ -308,17 +315,21 @@ nav ul li a{
 	font-size:.85em;
 }
 
+/**********COMMENTS ***********/
+
 .comment-status{
 	border-top:gray 1px solid;
 	border-bottom:gray 1px solid;
-	display:inline-block;
-	width:100%;
+	display:flex;
+	justify-content:center;
 }
 
-.comment-status h4{
-	float:left;
-	margin-left:10%;
+.comment-status h3,h4{
+	width:50%;
+	font-size:1em;
+	margin:5% 0; 
 }
+
 .comment-form{
 	width:90%;
 	margin:0 auto;
@@ -339,6 +350,7 @@ nav ul li a{
 .name-form{
 	margin-right:6%;
 }
+
 .email-input,.name-input{
 	width:98%;
 	margin:0;
@@ -351,6 +363,7 @@ nav ul li a{
 	padding-top:3%;
 	clear:both;
 }
+
 .comment-input{
 	height:200px;
 	width:96%;
@@ -361,7 +374,7 @@ nav ul li a{
 .submit-btn{
 	font-size:.85em;
 	padding:5px;
-	width:45%;
+	width:55%;
 	margin:5% 0;
 }
 
@@ -448,54 +461,184 @@ nav ul li a{
    Modify as content requires.
    ========================================================================== */
 
+   /*********TABLETS ************************/
+   
 @media (min-width:600px) {
+
+/******BASE STYLES ***********/
+
+html{
+	font-size:18px;
+}	
+
+h1{
+	font-size:1.78em;
+	line-height:2em;
+}
 	
-	h1{
-		font-size:2em;
-		line-height:2em;
-	}
+h2{
+	font-size:1.5em;
+}
+		
+h3{
+	font-size:.75em;
+}
 	
+main{
+	width:90%;
+	margin:0 auto;
+}
+	
+/********* HEADER ***********/
+
+header{
+	border-bottom:1px gray solid;
+	display:block;
+	height:100%;
+	width:100%;
+	position:relative;
+}
+
+.logo h1{
+	line-height:0;
+	margin-top:10%;
+}
+
+nav ul li a{
+	font-size:1em;
+}
+/******SIDEBAR*********/
+
+.img-intro{
+	display:inline-block;
+	width:50%;
+	
+}
+
+.profile-pic-wrapper{
+	width:75%;
+	margin:5% 14.5%;
+}
+
+.short-bio{
+	font-size:1em;
+	text-align:center;
+	width:75%;
+	margin:0 14.5%;
+}
+
+.search{
+	margin:5% 0 0 20%;
+	height:40px;
+}
+.search-input{
+	font-size:1em;
+}
+
+.search-btn{
+	font-size:1em;
+	width:50px;
+}
+
+/********MAIN CONTENT *********/
+
+
+.date{
+	font-size:1.5em;
+	margin-left:0;
+}
+
 
 }
 
 
+/*************DESKTOP STYLES ****************/
+
 @media (min-width:840px){
+	
+	
+
+/****************BASE STYLES ***************/
+
+h2{
+	text-align:left;
+	font-size:1.4em;
+}
+
+h3{
+	font-size:.78em;
+}
+
+h4{
+	font-size:.72em;
+}
 
 /*******************HEADER*******************/
 
 .logo{
 	float:left;
-	width:35%;
-	margin-bottom:-125px;
+	width:45%;
+	text-align:left;
+}
+
+header{
+	height:150px;
+	width:100%;
 }
 	
 nav{
+	width:50%;
+	margin:0;
+	padding:0;
+	display:block;
 	float:right;
-	padding:5% 0 3% 45%;
-	width:55%;
-	border-bottom:1px solid black;
 }
 
-nav ul{
-	padding-left:5%;
+nav ul li{
+	padding:8% 0; 
+	border:none;
+	margin:0 0 0 7%;
+	background-color:white;
+	display:inline-block;
+}
+
+nav ul li a{
+	text-decoration:none;
+	color:gray;
+	font-size:.75em;
 	
 }
-nav ul li{
-	display:inline;
-	padding-left:5%;
+
+/***************SIDEBAR *************/
+
+.profile-pic-wrapper{
+	padding:0;
+	margin:0;
+	width:100%;
+	float:none;
+}
+.profile-pic{
+	width:65%;
+	display:block;
+	margin:auto;
 }
 
+.short-bio{
+	font-size:.75em;
+}
 
+.img-intro{
+	width:100%;
+	border-bottom:1px gray solid;
+	margin-left:-7%;
+}
 
-
-/********SIDE BAR ************/
-aside{
+.sidebar{
 	width:25%;
-	height:100%;
-	border-left:1px gray solid;
 	float:right;
-	padding-left:5%;
-	clear:both;
+	height:100%;
+	margin:2% 0 0 0%;
+	padding-left:0;
 }
 
 aside ul{
@@ -505,23 +648,38 @@ aside ul{
 	line-height:2em;
 }
 
-
-.brooklyn-beta, .rails-girls, .etsy{
-	height:90px;
+.sidebar-links{
+	width:100%;
+	display: block;
+	margin-left:-15%;
 }
 
-.brooklyn-beta{
-	background-color:#edf5f8;
+.search-input{
+	width:90%;
+	margin-left:-20%;
 }
 
-.rails-girls{
-	background-color:#d6441d;
+.search-btn{
+	width:25%;
 }
 
+.sidebar-links h3{
+	text-align:left;
+}
 
+.sidebar-links a{
+	text-decoration:none;
+	color:gray;
+}
 
-.etsy{
-	background-color:#fcd841;
+.events figure{
+	margin:0 20% 5% 0;
+	width:100%;
+}
+
+.events img{
+	margin:0 20% 0 0;
+	width:100%;
 }
 	
 /*******LANDING PAGE *********/
@@ -568,16 +726,50 @@ aside ul{
 	}
 
 /*******SINGLE POST PAGE ************/
+main{
+	float:left;
+	width:60%;
+	border-right:1px gray solid;
+	padding:0 9% 0 5%;
+	margin-top:0;
+}
 
+.date{
+	margin-top:10%;
+}
+.single-post-img{
+	width:100%;
+	margin:0 auto;
+}
+
+/*******COMMENT FORM ********/
+
+.comment-status{
+	margin-bottom:10%;
+}
 
 .no-comments h4{
 	float:left;
 	padding-right:45%;
 }
 
-.single-post-img{
-	width:68%;
+
+.submit-btn{
+	font-size:.85em;
+	padding:5px;
+	width:35%;
+	margin:5% 0 10% 60%;
+	
 }
+
+.comment-form{
+	width:100%;
+}
+
+.blog-info{
+	margin:10% 0;
+}
+
 
 }
 
