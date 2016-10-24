@@ -95,8 +95,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/******MAIN STYLES *******/   
-   
+/******MAIN STYLES *******/
+
 html{
 	font-size:16px;
 }
@@ -201,7 +201,7 @@ nav ul{
 nav ul li{
 	text-transform:uppercase;
 	list-style:none;
-	padding:8% 0; 
+	padding:8% 0;
 	border:gray .5px solid;
 	border-radius:75%;
 	margin:10%;
@@ -327,7 +327,7 @@ nav ul li a{
 .comment-status h3,h4{
 	width:50%;
 	font-size:1em;
-	margin:5% 0; 
+	margin:5% 0;
 }
 
 .comment-form{
@@ -344,7 +344,7 @@ nav ul li a{
 
 .name-form, .email-form{
 	float:left;
-	width:45%;	
+	width:45%;
 }
 
 .name-form{
@@ -462,33 +462,33 @@ nav ul li a{
    ========================================================================== */
 
    /*********TABLETS ************************/
-   
+
 @media (min-width:600px) {
 
 /******BASE STYLES ***********/
 
 html{
 	font-size:18px;
-}	
+}
 
 h1{
 	font-size:1.78em;
 	line-height:2em;
 }
-	
+
 h2{
 	font-size:1.5em;
 }
-		
+
 h3{
 	font-size:.75em;
 }
-	
+
 main{
 	width:90%;
-	margin:0 auto;
+  margin:0 auto;
 }
-	
+
 /********* HEADER ***********/
 
 header{
@@ -497,6 +497,10 @@ header{
 	height:100%;
 	width:100%;
 	position:relative;
+}
+
+nav{
+  padding-bottom:5%;
 }
 
 .logo h1{
@@ -512,7 +516,7 @@ nav ul li a{
 .img-intro{
 	display:inline-block;
 	width:50%;
-	
+
 }
 
 .profile-pic-wrapper{
@@ -545,18 +549,29 @@ nav ul li a{
 
 .date{
 	font-size:1.5em;
-	margin-left:0;
+  margin-left:0;
 }
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*************DESKTOP STYLES ****************/
 
 @media (min-width:840px){
-	
-	
+
+
 
 /****************BASE STYLES ***************/
 
@@ -582,10 +597,10 @@ h4{
 }
 
 header{
-	height:150px;
 	width:100%;
+  height:125px;
 }
-	
+
 nav{
 	width:50%;
 	margin:0;
@@ -595,10 +610,10 @@ nav{
 }
 
 nav ul li{
-	padding:8% 0; 
-	border:none;
+	padding:8% 0;
+	border:0;
 	margin:0 0 0 7%;
-	background-color:white;
+	background-color:transparent;
 	display:inline-block;
 }
 
@@ -606,14 +621,14 @@ nav ul li a{
 	text-decoration:none;
 	color:gray;
 	font-size:.75em;
-	
+
 }
 
 /***************SIDEBAR *************/
 
 .profile-pic-wrapper{
 	padding:0;
-	margin:0;
+	margin: 5% 0 0 0;
 	width:100%;
 	float:none;
 }
@@ -637,12 +652,13 @@ nav ul li a{
 	width:25%;
 	float:right;
 	height:100%;
-	margin:2% 0 0 0%;
+  top:5%;
+  right:0;
 	padding-left:0;
 }
 
 aside ul{
-	list-style:none;	
+	list-style:none;
 	text-align:left;
 	padding:0;
 	line-height:2em;
@@ -681,10 +697,10 @@ aside ul{
 	margin:0 20% 0 0;
 	width:100%;
 }
-	
+
 /*******LANDING PAGE *********/
-	
-	
+
+
 	.home-img{
 		float:left;
 		width:45%;
@@ -696,33 +712,33 @@ aside ul{
 		width:50%;
 		float:left;
 	}
-	
+
 	.headline{
 		text-align:left;
 		width:100%;
 	}
-	
+
 	.headline h1{
 		line-height:1em;
 	}
-	
+
 	.intro{
 		clear:none;
 	}
-	
+
 	.icons{
 		display:flex;
 		justify-content:flex-start;
 	}
-	
+
 	.icon{
 		padding:1%;
 	}
-	
+
 	.blog-btn{
 		width:55%;
 		margin-top:5%;
-		
+
 	}
 
 /*******SINGLE POST PAGE ************/
@@ -759,7 +775,7 @@ main{
 	padding:5px;
 	width:35%;
 	margin:5% 0 10% 60%;
-	
+
 }
 
 .comment-form{
@@ -770,6 +786,22 @@ main{
 	margin:10% 0;
 }
 
+
+}
+
+@media (min-width:1350px) {
+
+main{
+  float:left;
+}
+
+header{
+  height:175px;
+}
+
+.sidebar{
+  clear:both;
+}
 
 }
 
